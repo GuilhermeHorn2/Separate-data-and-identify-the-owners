@@ -1,0 +1,30 @@
+hr = []
+wr = []
+cr = []
+
+while True:
+    a = int(input('Type (0) to send,type a random number to continue:'))
+    if a == 0:
+        break
+    c = int(input('R.I:'))
+    h = float(input('Height:'))
+    w = float(input('Weight:'))
+    hr.append(h)
+    wr.append(w)
+    cr.append(c)
+
+mah = max(hr)
+mih = min(hr)
+ah = sum(hr)/len(hr)
+
+maw = max(wr)
+miw = min(wr)
+aw = sum(wr)/len(wr)
+
+print('Taller height(cm):',mah,'/','R.I:',cr[hr.index(mah)])
+print('Smaller height(cm):',mih,'/','R.I',cr[hr.index(mih)])
+print('Average:',ah)
+
+print('Fatest weight(kg):',maw,'/','R.I:',cr[wr.index(maw)])
+print('Tinner weight(kg):',miw,'/','R.I:',cr[wr.index(miw)])
+print('Avarege:',aw)
